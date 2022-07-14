@@ -16,3 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "MVI Cookbook"
 include(":app")
+include(":mviCore")

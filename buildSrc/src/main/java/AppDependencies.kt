@@ -12,6 +12,11 @@ object AppDependencies {
     private const val materialComponents =
         "com.google.android.material:material:${Versions.materialComponents}"
 
+    //RxKotlin/RxJava
+    private const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJava}"
+    private const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
+    private const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
+
     // Test libs
     private val junit = "junit:junit:${Versions.junit}"
     private val extJUnit = "androidx.test.ext:junit:${Versions.extJunit}"
@@ -23,6 +28,9 @@ object AppDependencies {
         add(appcompat)
         add(constraintLayout)
         add(materialComponents)
+        add(rxJava)
+        add(rxAndroid)
+        add(rxKotlin)
     }
 
     val androidTestLibraries = arrayListOf<String>().apply {
