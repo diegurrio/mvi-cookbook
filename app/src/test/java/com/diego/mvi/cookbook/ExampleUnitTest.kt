@@ -1,4 +1,4 @@
-package com.diego.mvi.core
+package com.diego.mvi.cookbook
 
 import org.junit.Test
 
