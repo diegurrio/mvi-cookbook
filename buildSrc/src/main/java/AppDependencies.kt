@@ -17,12 +17,36 @@ object AppDependencies {
     private const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
     private const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
 
-    // Test libs
+    //Dagger Injection
+    private const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
+    private const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
+    private const val daggerSupport = "com.google.dagger:dagger-android-support:${Versions.dagger}"
+    private const val daggerProcessor = "com.google.dagger:dagger-android-processor:${Versions.dagger}"
+
+    //Test libs
     private val junit = "junit:junit:${Versions.junit}"
     private val extJUnit = "androidx.test.ext:junit:${Versions.extJunit}"
     private val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espresso}"
 
     val appLibraries = arrayListOf<String>().apply {
+        add(kotlinStdLib)
+        add(coreKtx)
+        add(appcompat)
+        add(constraintLayout)
+        add(materialComponents)
+        add(rxJava)
+        add(rxAndroid)
+        add(rxKotlin)
+        add(dagger)
+        add(daggerSupport)
+    }
+
+    val appAnnotationProcessors = arrayListOf<String>().apply {
+        add(daggerCompiler)
+        add(daggerProcessor)
+    }
+
+    val mviCoreDependencies = arrayListOf<String>().apply {
         add(kotlinStdLib)
         add(coreKtx)
         add(appcompat)

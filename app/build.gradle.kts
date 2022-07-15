@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
 }
 
 android {
@@ -46,6 +47,7 @@ dependencies {
 
     // App libs
     implementation(AppDependencies.appLibraries)
+    kapt(AppDependencies.appAnnotationProcessors)
 
     // Test libs
     testImplementation(AppDependencies.testLibraries)

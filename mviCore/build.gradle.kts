@@ -31,7 +31,7 @@ android {
 
 dependencies {
     // App libs
-    implementation(AppDependencies.appLibraries)
+    implementation(AppDependencies.mviCoreDependencies)
 
     // Test libs
     testImplementation(AppDependencies.testLibraries)

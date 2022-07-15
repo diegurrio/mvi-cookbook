@@ -14,6 +14,9 @@ object Versions {
     const val rxAndroid = "2.1.1"
     const val rxKotlin = "2.4.0"
 
+    //Dagger Injection
+    const val dagger = "2.31.2"
+
     //test
     const val junit = "4.13.2"
     const val extJunit = "1.1.1"
